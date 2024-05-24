@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const port = 4000;
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("hello world");
